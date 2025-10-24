@@ -11,6 +11,8 @@ import java.util.LinkedList;
     };
     public void addlogin(String name,int id,String email,int type){
        if (type==1) {
+       //  Admin admin1=new Admin(name, id, email);
+        //admen.add(admin1);
          for ( Admin i : admen) {
              if (i.getid()==id) {
                 System.out.println("welcom to your compt:"+i.getName());
@@ -20,6 +22,8 @@ import java.util.LinkedList;
             
         }
        }else if(type==2){
+            // NormalUser user1=new NormalUser(name, id, email);
+            // Normaluser.add(user1);
            for ( NormalUser i : Normaluser) {
              if (i.getid()==id) {
                 System.out.println("welcom to your compt:"+i.getName());
@@ -41,12 +45,16 @@ import java.util.LinkedList;
                 admen.add(admine);
                 if(admen.contains(admine)){
                     System.out.println("your compt created successufly");
+                }else{
+                  System.out.println("error ");
                 }
             }else if(type==2){
                  NormalUser user=new NormalUser(name ,id ,email ); 
                 Normaluser.add(user);
                 if(Normaluser.contains(user)==true){
                     System.out.println("your compt created successufly");
+                }else{
+                   System.out.println("error ");
                 }
             }
     }

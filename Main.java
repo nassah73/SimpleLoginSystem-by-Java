@@ -14,9 +14,10 @@ public class Main {
                 break;
              case 2:
              creat_acompt();
-            default:
+             break;
+           default:
             System.out.println("error");
-                break;
+               
           }
    }
     public static void login(){
@@ -41,7 +42,7 @@ public class Main {
              System.out.println("  enter your id");
              int id=input.nextInt(); input.nextLine();
              Gestion user=new Gestion();
-             user.addlogin(name,id,email,1);
+             user.addlogin(name,id,email,2);
         }
     }
     public static void creat_acompt(){
